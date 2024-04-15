@@ -27,7 +27,7 @@ function MainPage() {
     // console.log("Redner product " + renderProduct);
     return (
       <div>
-        {!renderProduct && <h1>All proucts</h1>}
+        {!renderProduct && <h1>All products</h1>}
         {!renderProduct && flag &&  <Cards setProductToRender = {setProductToRender} setRenderProduct = {setRenderProduct} currentPage = {currentPage} allData = {allData.products} ></Cards>}
         {!renderProduct && flag && <Buttons currentPage = {currentPage} setCurrentPage = {setCurrentPage} numberOfProducts = {allData.products.length}></Buttons>}
         {renderProduct && <Product setRenderProduct ={ setRenderProduct} data = {currentProductToRender}></Product>}
